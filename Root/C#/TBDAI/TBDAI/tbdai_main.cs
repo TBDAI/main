@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace TBDAI
 {
-    public partial class Form1 : Form
+    public partial class tbdForm : Form
     {
-        public Form1()
+        public tbdForm()
         {
             InitializeComponent();
         }
+        
     }
+
+    
 }
