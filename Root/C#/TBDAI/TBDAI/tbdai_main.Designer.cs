@@ -37,10 +37,10 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(69)))), ((int)(((byte)(73)))));
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(34, 34);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(25);
+            this.richTextBox1.Location = new System.Drawing.Point(23, 22);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(17, 16, 17, 16);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(559, 97);
+            this.richTextBox1.Size = new System.Drawing.Size(373, 63);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -48,11 +48,13 @@
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(69)))), ((int)(((byte)(73)))));
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(34, 208);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(25);
+            this.richTextBox2.Enabled = false;
+            this.richTextBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox2.Location = new System.Drawing.Point(23, 135);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(17, 16, 17, 16);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(559, 257);
-            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Size = new System.Drawing.Size(373, 167);
+            this.richTextBox2.TabIndex = 20;
             this.richTextBox2.Text = "";
             // 
             // sendBtn
@@ -61,23 +63,26 @@
             this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sendBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sendBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.sendBtn.Location = new System.Drawing.Point(621, 34);
+            this.sendBtn.Location = new System.Drawing.Point(415, 135);
+            this.sendBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sendBtn.Name = "sendBtn";
-            this.sendBtn.Size = new System.Drawing.Size(104, 97);
+            this.sendBtn.Size = new System.Drawing.Size(69, 63);
             this.sendBtn.TabIndex = 1;
             this.sendBtn.Text = "send";
             this.sendBtn.UseVisualStyleBackColor = false;
             // 
             // tbdForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(62)))));
-            this.ClientSize = new System.Drawing.Size(978, 499);
+            this.ClientSize = new System.Drawing.Size(652, 324);
             this.Controls.Add(this.sendBtn);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "tbdForm";
             this.Text = "Form1";
             this.ResumeLayout(false);

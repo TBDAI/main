@@ -9,3 +9,14 @@ C:\Users\Realschule Boxberg 1\Desktop\Projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug
 C:\Users\Realschule Boxberg 1\Desktop\Projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.csproj.CoreCompileInputs.cache
 C:\Users\Realschule Boxberg 1\Desktop\Projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.exe
 C:\Users\Realschule Boxberg 1\Desktop\Projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.pdb
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\bin\Debug\TBDAI.exe.config
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\bin\Debug\TBDAI.exe
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\bin\Debug\TBDAI.pdb
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.csproj.AssemblyReference.cache
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.csproj.SuggestedBindingRedirects.cache
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.Properties.Resources.resources
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.tbdForm.resources
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.csproj.GenerateResource.cache
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.csproj.CoreCompileInputs.cache
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.exe
+C:\Users\bozhi\Desktop\pers\School\projekt\main\Root\C#\TBDAI\TBDAI\obj\Debug\TBDAI.pdb
