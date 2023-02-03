@@ -12,6 +12,8 @@ using System.IO;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 
+
+
 namespace TBDAI
 {
     public partial class tbdForm : Form
@@ -27,9 +29,37 @@ namespace TBDAI
         {
             thinkLbl.Visible = true;
             timer1.Start();
-            
-            
+
+
+            //py_run();
+
         }
+
+       
+
+
+        private void py_run()
+        {
+            var process = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "python",
+                    Arguments = @"..\..\..\..\..\Python\test.py",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                }
+            };
+
+            process.Start();
+            string outputt = process.StandardOutput.ReadToEnd();
+            process.WaitForExit();
+
+
+            outputTxtBox.Text = outputt;
+        }
+
         private void run_cmd()
         {
             string currentDirectory = Environment.CurrentDirectory;
@@ -57,8 +87,8 @@ namespace TBDAI
                 sw.WriteLine(textboxInput);
             }
 
-            run_cmd();
 
+            py_run();
 
         }
 
@@ -66,6 +96,7 @@ namespace TBDAI
             private void timer1_Tick(object sender, EventArgs e)
         {
             thinkLbl.Visible = false;
+            
             inputsend();
             timer1.Stop();
         }
