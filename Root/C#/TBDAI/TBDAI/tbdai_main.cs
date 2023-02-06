@@ -31,7 +31,7 @@ namespace TBDAI
             timer1.Start();
 
 
-            //py_run();
+            //inputsend();
 
         }
 
@@ -56,8 +56,9 @@ namespace TBDAI
             string outputt = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
 
+            run_cmd();
 
-            outputTxtBox.Text = outputt;
+            //outputTxtBox.Text = outputt;
         }
 
         private void run_cmd()
