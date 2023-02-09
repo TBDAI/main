@@ -46,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="rbutton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="tbdai_main.cs">
       <SubType>Form</SubType>
     </Compile>

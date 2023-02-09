@@ -11,41 +11,35 @@ maybe be added on Thursday
 For BOBBY..
 
 ----Design to do----
-244 characters limit on text box,
-disable seccond text box,
 button creation
 --------------------
 
 ----code to do----
-read from txt (if possible with animated typing),
-debug/test buttons
+connection with python file(starting python file using python file)
 ------------------
 
 
 FOR DAVID..
 
 ---Python To Do---
-python x APIs.
+Python API or requests TEST
 ------------------
 
 
 ---Other To Do---
-What is a API.
-What is SQL.
-Help with Design
+-
 -----------------
 
 
 FOR TYRONE...
 
 ---Python To Do---
-requests librery in python.
 python x APIs.
 ------------------
 
 
 ---Other To Do---
-What is a API.
-Help with Design
+TEST and TRY OUT
+Help with c#
 -----------------
 
