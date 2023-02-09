@@ -1,1 +1,1 @@
-<_io.TextIOWrapper name='inputcs.txt' mode='r' encoding='cp1252'>
+The generated response is: ddd
