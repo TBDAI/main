@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.IO.Pipes;
 
 
 
@@ -27,39 +28,32 @@ namespace TBDAI
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            thinkLbl.Visible = true;
-            timer1.Start();
+            // Get the text from the input text box
+            string inputText = inputTxtBox.Text;
 
-
-            //inputsend();
-
-        }
-
-       
-
-
-        private void py_run()
-        {
-            var process = new Process
+            // Start the Python script and pass the text as an argument
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = "python.exe";
+        
+            start.Arguments = string.Format("\"..\\..\\..\\..\\..\\Python\\test.py\" \"{0}\"", inputText);
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            using (Process process = Process.Start(start))
             {
-                StartInfo = new ProcessStartInfo
+                using (StreamReader reader = process.StandardOutput)
                 {
-                    FileName = "python",
-                    Arguments = @"..\..\..\..\..\Python\test.py",
-                    RedirectStandardOutput = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true,
+                    string result = reader.ReadToEnd();
+
+                    // Update the text of the output text box
+                    outputTxtBox.Text = result;
                 }
-            };
+            }
 
-            process.Start();
-            string outputt = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
-
-            run_cmd();
-
-            //outputTxtBox.Text = outputt;
         }
+
+
+
+
 
         private void run_cmd()
         {
@@ -68,37 +62,14 @@ namespace TBDAI
             string text = File.ReadAllText(filePath);
             outputTxtBox.Text = text; 
             }
-        private void inputsend()
-        {
-            // Get the text from the textbox
-            string textboxInput = inputTxtBox.Text.ToString();
-
-            // Set the path for the text file
-            string path = @"..\..\..\..\..\Python\inputcs.txt";
-
-            // Check if the file exists
-            if (File.Exists(path))
-            {
-                // If the file exists, delete it
-                File.Delete(path);
-            }
-
-            using (StreamWriter sw = File.CreateText(path))
-            {
-                sw.WriteLine(textboxInput);
-            }
-
-
-            py_run();
-
-        }
+        
 
 
             private void timer1_Tick(object sender, EventArgs e)
         {
             thinkLbl.Visible = false;
             
-            inputsend();
+            
             timer1.Stop();
         }
     }

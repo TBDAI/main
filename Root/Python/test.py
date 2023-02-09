@@ -1,9 +1,14 @@
-inputFile = open('inputcs.txt', 'r')
-content = inputFile.read()
-ans = str("The generated response is: " + content)
-inputFile.close()
- 
- 
-outputFile = open('outputpy.txt', 'w')
+import sys
 
-fwr = outputFile.write(ans)
+def main():
+    # Get the text from the argument, including spaces
+    inputText = sys.argv[1]
+
+    # Process the text
+    result = inputText + " processed by Python script"
+
+    # Print the result to stdout
+    print(result)
+
+if __name__ == "__main__":
+    main()
