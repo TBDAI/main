@@ -34,6 +34,7 @@
             this.sendBtn = new System.Windows.Forms.Button();
             this.thinkLbl = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inputTxtBox
@@ -43,8 +44,9 @@
             this.inputTxtBox.ForeColor = System.Drawing.SystemColors.Window;
             this.inputTxtBox.Location = new System.Drawing.Point(23, 22);
             this.inputTxtBox.Margin = new System.Windows.Forms.Padding(17, 16, 17, 16);
-            this.inputTxtBox.MaxLength = 244;
+            this.inputTxtBox.MaxLength = 255;
             this.inputTxtBox.Name = "inputTxtBox";
+            this.inputTxtBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.inputTxtBox.Size = new System.Drawing.Size(373, 63);
             this.inputTxtBox.TabIndex = 0;
             this.inputTxtBox.Text = "";
@@ -69,7 +71,7 @@
             this.sendBtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sendBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.sendBtn.Location = new System.Drawing.Point(415, 22);
-            this.sendBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.sendBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(69, 63);
             this.sendBtn.TabIndex = 1;
@@ -92,19 +94,31 @@
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(321, 90);
+            this.label1.Margin = new System.Windows.Forms.Padding(1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "255 / 255";
+            // 
             // tbdForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(652, 324);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.thinkLbl);
             this.Controls.Add(this.sendBtn);
             this.Controls.Add(this.outputTxtBox);
             this.Controls.Add(this.inputTxtBox);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "tbdForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -118,6 +132,7 @@
         private System.Windows.Forms.Button sendBtn;
         private System.Windows.Forms.Label thinkLbl;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
